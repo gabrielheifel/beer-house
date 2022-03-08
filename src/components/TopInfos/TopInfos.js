@@ -41,6 +41,7 @@ const Wrapper = styled.ul`
 
 const Li = styled.li`
   list-style: none;
+  margin-right: 20px;
 `;
 
 const Cash = styled.span`

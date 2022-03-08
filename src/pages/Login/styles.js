@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Background = styled.div`
-  background: #fff;
+  background: rgba(0, 0, 0, 0.5);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -10,7 +10,7 @@ export const Background = styled.div`
 
 export const Container = styled.div`
   background: #2f2f2f;
-  padding: 40px;
+  padding: 50px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -33,6 +33,7 @@ export const LoginInputs = styled.div`
 export const Label = styled.label`
   color: #fff;
   margin-right: 5px;
+  align-self: center;
 `;
 
 export const Input = styled.input`

@@ -13,3 +13,8 @@ export const Margin = styled.div`
 export const DisplayFlex = styled.div`
   display: flex;
 `;
+
+export const Wrapper = styled.div`
+  flex: 1;
+  margin-top: 20px;
+`;

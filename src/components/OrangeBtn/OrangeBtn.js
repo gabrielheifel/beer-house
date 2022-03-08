@@ -1,9 +1,17 @@
-import React from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
+import Modal from '../Modal/Modal';
 
-const OrangeBtn = ({ name }) => {
+const OrangeBtn = ({ add }) => {
+
+  const [showModal, setShowModal] = useState(false);
+  const openModal = () => setShowModal(!showModal);
+
   return (
-    <Btn>+ Adicionar {name}</Btn>
+    <>
+      <Btn onClick={openModal}>+ Adicionar {add}</Btn>
+      <Modal showModal={showModal} setShowModal={setShowModal} />
+    </>
   );
 };
 
